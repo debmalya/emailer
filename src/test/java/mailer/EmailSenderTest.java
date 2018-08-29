@@ -12,7 +12,6 @@ public class EmailSenderTest {
 	@Test
 	public void testSendEmail() {
 		emailSender = new EmailSender("Mailer.properties");
-		// e.g jamilakhtar1210@gmail.com
 		Assert.assertTrue(emailSender.sendEmail("<sender1>,<sender2>", "This is for testing email", "Test"));
 	}
 
